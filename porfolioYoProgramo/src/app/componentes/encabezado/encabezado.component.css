@@ -1,8 +1,17 @@
 div{
-    background-color: rgb(171, 162, 162);
+    background-color: rgb(95, 109, 134);
 }
 app-sociales{
     float: right;
     margin-top: 10px;
     margin-right: 50px;
+}
+app-banner{
+    position: absolute;
+    display: flex;
+    float: left;
+    height: 45%;
+    
+    
+
 }
