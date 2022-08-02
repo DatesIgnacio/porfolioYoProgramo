@@ -1,0 +1,20 @@
+.row{
+padding-top: 15px;
+}
+div{
+    
+    background-color: rgb(76, 102, 136);
+    text-align: center;
+
+}
+
+/*Estilo de la foto de perfil*/
+#fotoperfil{
+    position: absolute;
+    left: 3%;  
+    width: 10%;
+    border-radius:35%;
+    box-shadow: 3px 3px 3px rgb(68, 80, 121);
+    top: 400px;
+}
+
