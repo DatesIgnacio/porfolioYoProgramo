@@ -1,20 +1,29 @@
 .row{
-padding-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 div{
-    
-    background-color: rgb(76, 102, 136);
-    text-align: center;
-
+    background-color: rgb(98, 118, 153);
 }
-
 /*Estilo de la foto de perfil*/
 #fotoperfil{
     position: absolute;
-    left: 3%;  
+    align-items: center;
+    margin-left: 50px;
     width: 10%;
     border-radius:7%;
-    box-shadow: 3px 3px 3px rgb(68, 80, 121);
-    top: 400px;
+    box-shadow: 7px 7px 10px rgb(68, 80, 121);
+    top: 310px;
 }
+.nombre{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(36, 32, 28);
+    text-align: center;
+    float: right;
+    margin-top: 15px;
+}
+.reseña{
+    display: inline;
+    float: right;
 
+}
