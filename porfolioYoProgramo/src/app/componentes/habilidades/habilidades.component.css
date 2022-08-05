@@ -1,0 +1,14 @@
+h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 11, 41);
+
+}
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    text-shadow: 1px 1px 10px rgb(147, 153, 199);
+}
+.col{
+    text-align: center;
+    justify-items: center;
+}

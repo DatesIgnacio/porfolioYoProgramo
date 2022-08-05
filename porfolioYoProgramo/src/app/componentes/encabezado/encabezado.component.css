@@ -1,10 +1,6 @@
-.container-fluid{
+.row{
     background-color: rgb(98, 118, 153);
-    justify-content: center;
-}
-.primera{
-        display:flex;
-
+    
 }
 #logoAP{
     width: 250px;
@@ -32,6 +28,9 @@
 }
 .logos{
 margin-top: 25px;
-   
+text-align: end;   
+}
+#banner{
+    opacity: 85%;
 }
 

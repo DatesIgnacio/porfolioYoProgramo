@@ -1,9 +1,13 @@
 .row{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
 }
-div{
-    background: rgb(81, 97, 140);
+h2{
+    text-shadow: 1px 1px 10px rgb(175, 182, 234);
 }
-h1, h3{
-    display: inline-block;
+div{
+    background: rgb(90, 108, 141);
+}
+h3, h4{
+    display: inline;
 }
