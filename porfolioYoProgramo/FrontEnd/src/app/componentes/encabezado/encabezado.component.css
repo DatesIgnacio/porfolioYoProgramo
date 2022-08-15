@@ -1,5 +1,5 @@
 .row{
-    background-color: rgb(98, 118, 153);
+    background-color: rgb(108, 133, 176);
     
 }
 #logoAP{
@@ -32,5 +32,6 @@ text-align: end;
 }
 #banner{
     opacity: 85%;
+    width: 100%;
 }
 

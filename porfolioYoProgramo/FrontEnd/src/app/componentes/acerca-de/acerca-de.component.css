@@ -1,6 +1,7 @@
 .container-fluid{
+
     border-bottom: 1px rgb(31, 27, 51) solid;
-    background-color: rgb(98, 118, 153);
+    background-color: rgb(108, 133, 176);
 }
 
 
@@ -11,10 +12,10 @@
     position: absolute;
     align-items: center;
     margin-left: 50px;
-    width: 10%;
+    width: 13%;
     border-radius:7%;
     box-shadow: 7px 7px 10px rgb(68, 80, 121);
-    top: 250px;
+    top: 280px;
 }
 
 .nombre{
@@ -29,6 +30,7 @@
  font-family: Verdana, Geneva, Tahoma, sans-serif;
  font-size: medium;
  margin-left: 25px;
+ margin-top: 35px;
  text-align: justify;
 }
 #ingreso{

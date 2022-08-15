@@ -28,10 +28,18 @@ public class ImpPersonaService implements IPersonaService {
         ipersonaRepository.deleteById(id);
     }
 
+
     @Override
     public Persona findPersona(Long id) {
-        Persona persona = ipersonaRepository.findById(id).orEsle (null);
+        Persona persona = ipersonaRepository.findById(id).orElse(null);
             return persona;
     }
+
+    @Override
+    public void savePersona(Persona persona) {
+        ipersonaRepository.save(persona);
+    }
+
+
     
 }
