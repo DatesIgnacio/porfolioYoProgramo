@@ -2,26 +2,28 @@
     <div class="row row-cols-2">
         <div class="col">
             <img src="../../../assets/arg-programa.png" alt="Logo de Argentina Programa" id="logoAP">
-        </div>    
-   
+        </div>
+
         <div class="col" class="logos">
             <a href="http://"><img src="../../../assets/whatsapp-logo-4.png" id="ws"></a>
-            <a href="http://"><img src="../../../assets/github-logo.png" id="github"></a> 
-            <a href="http://"> <img src="../../../assets/kisspng-computer-icons-desktop-wallpaper-email-welcome-letter-5b5225b9ac4250.9487872215321102657056.png" id="carta"> </a>
-            <button type="button" class="btn btn-outline-light" id="ingreso" (click)="login()">INGRESAR</button>
-        </div>   
+            <a href="http://"><img src="../../../assets/github-logo.png" id="github"></a>
+            <a href="http://"> <img
+                    src="../../../assets/kisspng-computer-icons-desktop-wallpaper-email-welcome-letter-5b5225b9ac4250.9487872215321102657056.png"
+                    id="carta"> </a>
+   
+            <button type="button" class="btn btn-outline-light" id="ingreso" (click)="login()"
+                *ngIf="!isLogged">INGRESAR</button>
+            <button type="button" class="btn btn-outline-light" id="ingreso" (click)="onLogOut()"
+                *ngIf="isLogged">SALIR</button>
+        </div>
     </div>
-    
-    <div class="row">
-        
-            <img src="../../../assets/potrerillos.jpg" alt="Aconcagua" id="banner" >
+</div>
 
-    </div>
 
+<div class="row">
+
+    <img src="../../../assets/potrerillos.jpg" alt="Aconcagua" id="banner">
 
 </div>
-   
-
- 
 
 
