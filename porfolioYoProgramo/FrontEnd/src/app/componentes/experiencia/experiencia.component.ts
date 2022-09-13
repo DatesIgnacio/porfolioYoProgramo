@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ExpLaboral } from 'src/app/model/exp-laboral';
+import { ExpLaboralServiceService } from 'src/app/service/exp-laboral-service.service';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-experiencia',
@@ -6,10 +9,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
+  experienciaLaboral: ExpLaboral[] = [];
 
-  constructor() { }
+
+constructor(private expLaboral: ExpLaboralServiceService, private tokenService: TokenService) { }
+
+  isLogged = false;
 
   ngOnInit(): void {
+    this.cargarExperiencia();
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
   }
 
+  cargarExperiencia(): void {
+    this.expLaboral.lista().subscribe(data => { this.experienciaLaboral = data; })
+  }
+
+  delete(id?: number){
+    if(id != undefined){
+      this.expLaboral.delete(id).subscribe(
+        data => {
+          this.cargarExperiencia();
+        }, err => {
+          alert("No se pudo borrar la experiencia");
+        }
+      )
+    }
+  }
 }
