@@ -12,7 +12,7 @@ export class ExperienciaComponent implements OnInit {
   experienciaLaboral: ExpLaboral[] = [];
 
 
-constructor(private expLaboral: ExpLaboralServiceService, private tokenService: TokenService) { }
+constructor(private expLaboralService: ExpLaboralServiceService, private tokenService: TokenService) { }
 
   isLogged = false;
 
@@ -26,12 +26,12 @@ constructor(private expLaboral: ExpLaboralServiceService, private tokenService: 
   }
 
   cargarExperiencia(): void {
-    this.expLaboral.lista().subscribe(data => { this.experienciaLaboral = data; })
+    this.expLaboralService.lista().subscribe(data => { this.experienciaLaboral = data; })
   }
 
   delete(id?: number){
     if(id != undefined){
-      this.expLaboral.delete(id).subscribe(
+      this.expLaboralService.delete(id).subscribe(
         data => {
           this.cargarExperiencia();
         }, err => {
