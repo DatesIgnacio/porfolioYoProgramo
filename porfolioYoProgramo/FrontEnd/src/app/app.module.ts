@@ -17,6 +17,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { interceptorProvider } from './service/interceptor.service';
 import { NuevaExperienciaComponent } from './componentes/experiencia/nueva-experiencia.component';
 import { EditarExperienciaComponent } from './componentes/experiencia/editar-experiencia.component';
+import { NuevaEducacionComponent } from './componentes/educacion/nueva-educacion.component';
 
 
 
@@ -34,6 +35,7 @@ import { EditarExperienciaComponent } from './componentes/experiencia/editar-exp
     LoginComponent,
     NuevaExperienciaComponent,
     EditarExperienciaComponent,
+    NuevaEducacionComponent,
  
   ],
   imports: [
