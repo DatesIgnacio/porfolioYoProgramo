@@ -23,7 +23,7 @@ public class EducacionService {
         return iEducacionRepository.findById(id);
     }
     
-    public Optional<Educacion> getByNmbreE(String nombreEducacion){
+    public Optional<Educacion> getByNombreEducacion(String nombreEducacion){
         return iEducacionRepository.findByNombreEducacion(nombreEducacion);
     }
     
@@ -39,7 +39,7 @@ public class EducacionService {
         return iEducacionRepository.existsById(id);
     }
     
-    public boolean existsByNombreE(String nombreEducacion){
+    public boolean existsByNombreEducacion(String nombreEducacion){
         return iEducacionRepository.existsByNombreEducacion(nombreEducacion);
     }
 }

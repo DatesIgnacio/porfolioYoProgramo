@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"https://frontendporfoliodatesignacio.web.app", "http://localhost:4200"})
 public class EducacionController {
     @Autowired
     EducacionService educacionService;
@@ -56,7 +56,7 @@ public class EducacionController {
         if(StringUtils.isBlank(dtoeducacion.getNombreEducacion())){
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         }
-        if(educacionService.existsByNombreE(dtoeducacion.getNombreEducacion())){
+        if(educacionService.existsByNombreEducacion(dtoeducacion.getNombreEducacion())){
             return new ResponseEntity(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
         }
         
@@ -73,7 +73,7 @@ public class EducacionController {
         if(!educacionService.existsById(id)){
             return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.NOT_FOUND);
         }
-        if(educacionService.existsByNombreE(dtoeducacion.getNombreEducacion()) && educacionService.getByNmbreE(dtoeducacion.getNombreEducacion()).get().getId() != id){
+        if(educacionService.existsByNombreEducacion(dtoeducacion.getNombreEducacion()) && educacionService.getByNombreEducacion(dtoeducacion.getNombreEducacion()).get().getId() != id){
             return new ResponseEntity(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
         }
         if(StringUtils.isBlank(dtoeducacion.getNombreEducacion())){

@@ -37,3 +37,8 @@
     color: black;
     border-color: black;
 }
+
+svg{
+    float: right;
+    display: inline;
+}

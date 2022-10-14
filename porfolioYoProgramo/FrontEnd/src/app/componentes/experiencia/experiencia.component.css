@@ -3,7 +3,7 @@
     padding: 20px;
 }
 h2{
-    text-shadow: 1px 1px 10px rgb(90, 109, 162);
+    text-shadow: 1px 1px 10px rgb(106, 126, 180);
 }
 div{
     background: rgb(142, 174, 222);
@@ -12,11 +12,7 @@ h3, h4{
     display: inline;
 }
 
-#nuevaexpe{
-    float: initial;    
-}
-
 td{
-    border-color: rgb(122, 150, 191);;
+    border-color: rgb(122, 150, 191);
 
 }

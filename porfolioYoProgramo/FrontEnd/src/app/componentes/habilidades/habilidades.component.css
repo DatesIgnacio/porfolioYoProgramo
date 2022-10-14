@@ -1,19 +1,16 @@
-.container-fluid{
+.row{
     background-color: rgb(142, 174, 222);
-
-}
-
-h5{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0, 11, 41);
-
-}
-h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
-    text-shadow: 1px 1px 10px rgb(90, 109, 162);
 }
-.col{
-    text-align: center;
-    justify-items: center;
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px 10px rgb(106, 126, 180);
+    
+}
+
+ 
+td{
+    border-color: rgb(122, 150, 191);
+
 }

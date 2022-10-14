@@ -1,19 +1,30 @@
-
 <div class="container-fluid">
+
+
     <div class="row row-cols-2">
         <div>
-             <img src="../../../assets/fotoPerfilAdulto.jpg" alt="de la primaria" class= "img-thumbnail" id="fotoperfil">
+            <img src={{persona.img}} alt="foto de perfil" class="img-thumbnail" id="fotoperfil">
         </div>
-    
-         <div class="col" class="nombre">
-            <button type="button" class="btn btn-outline-light">{{persona.apellido}} {{persona.nombre}}</button>
-            
+
+        <div class="col" class="nombre">
+            <button type="button" class="btn btn-outline-light">{{persona.apellido}} {{persona.nombre}} 
+             <button *ngIf="isLogged" routerLink="/editaracercade/1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-pencil-fill" viewBox="0 0 16 16" >
+                        <path  
+                             d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+                    </svg>
+                </button>
+
+
+            </button>
+
             <p>Desarrollador Web Full Stack Jr.</p>
         </div>
-        
-        <div class="col" class="reseña">
-            <h3>Breve reseña autobiográfica</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aut ratione praesentium repellendus, beatae ullam eos pariatur eum, suscipit saepe doloribus sapiente exercitationem dicta porro temporibus neque voluptatum voluptatibus?</p>
+    </div>
+        <div class="row" class="reseña">
+            <h4>Breve reseña autobiográfica</h4>
+            <p>{{persona.descripcion}}</p>
         </div>
-    </div>    
+  
 </div>
